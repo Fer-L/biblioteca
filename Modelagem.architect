@@ -115,7 +115,7 @@
     <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX29" populated="true" UUID="c9cd4770-1d11-4252-a3c5-623b5144d2e5" clustered="false" name="ListaDeDesejos_pk" physicalName="ListaDeDesejos_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX29" populated="true" UUID="c9cd4770-1d11-4252-a3c5-623b5144d2e5" clustered="false" name="ListaDeDesejos_pk" physicalName="listadedesejos_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC30" populated="true" UUID="82cc85c1-cbe0-4d1b-adae-c8f3346c90d9" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="id" physicalName="id" />
     </index>
    </folder>
@@ -141,30 +141,30 @@
     <folder id="FOLTAB312" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB314" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX36" populated="true" UUID="776dd402-32e3-4d40-ab26-b3a1aae5f00f" clustered="false" name="Emprestimo_pk" physicalName="Emprestimo_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX36" populated="true" UUID="776dd402-32e3-4d40-ab26-b3a1aae5f00f" clustered="false" name="Emprestimo_pk" physicalName="emprestimo_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC37" populated="true" UUID="779d1257-86c9-4193-82af-dc8387ca12ac" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="id" physicalName="id" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL38" populated="true" UUID="ecfd52a7-73d7-4476-a6d9-edc1720e1009" deferrability="7" deleteRule="3" fk-table-ref="TAB8" fkCardinality="3" identifying="true" name="Usuario_Estante_fk" physicalName="Usuario_Estante_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   <relationship id="REL38" populated="true" UUID="ecfd52a7-73d7-4476-a6d9-edc1720e1009" deferrability="7" deleteRule="3" fk-table-ref="TAB8" fkCardinality="3" identifying="true" name="Usuario_Estante_fk" physicalName="usuario_estante_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP39" populated="true" UUID="e3683fa2-54fe-4af7-9cc7-01c6ff309e5a" fk-column-ref="COL11" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL40" populated="true" UUID="9935d466-1dac-497c-8209-808594403bbb" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="3" identifying="true" name="Usuario_ListaDeDesejos_fk" physicalName="Usuario_ListaDeDesejos_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   <relationship id="REL40" populated="true" UUID="9935d466-1dac-497c-8209-808594403bbb" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="3" identifying="true" name="Usuario_ListaDeDesejos_fk" physicalName="usuario_listadedesejos_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP41" populated="true" UUID="2bb1165b-2482-48a5-b4ec-8b6fcb42a0a1" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL42" populated="true" UUID="348feb73-b9f0-4dfa-bf50-de921eb8cb46" deferrability="7" deleteRule="3" fk-table-ref="TAB15" fkCardinality="6" identifying="true" name="Estante_Livro_fk" physicalName="Estante_Livro_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+   <relationship id="REL42" populated="true" UUID="348feb73-b9f0-4dfa-bf50-de921eb8cb46" deferrability="7" deleteRule="3" fk-table-ref="TAB15" fkCardinality="6" identifying="true" name="Estante_Livro_fk" physicalName="estante_livro_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP43" populated="true" UUID="8fa95d84-d457-4c32-97b0-ad75f6c937f3" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
    </relationship>
-   <relationship id="REL44" populated="true" UUID="f54116c4-b937-44ad-85b4-fd1854e13dc0" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="3" identifying="true" name="Livro_ListaDeDesejos_fk" physicalName="Livro_ListaDeDesejos_fk" pk-table-ref="TAB15" pkCardinality="6" updateRule="3" >
+   <relationship id="REL44" populated="true" UUID="f54116c4-b937-44ad-85b4-fd1854e13dc0" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="3" identifying="true" name="Livro_ListaDeDesejos_fk" physicalName="livro_listadedesejos_fk" pk-table-ref="TAB15" pkCardinality="6" updateRule="3" >
     <column-mapping id="CMP45" populated="true" UUID="cc79f780-4c35-4605-942b-ef017518ecfa" fk-column-ref="COL27" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
    </relationship>
-   <relationship id="REL46" populated="true" UUID="d303e35e-c080-4021-baa8-40043852b8e9" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="3" identifying="true" name="Livro_Emprestimo_fk" physicalName="Livro_Emprestimo_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+   <relationship id="REL46" populated="true" UUID="d303e35e-c080-4021-baa8-40043852b8e9" deferrability="7" deleteRule="3" fk-table-ref="TAB31" fkCardinality="3" identifying="true" name="Livro_Emprestimo_fk" physicalName="livro_emprestimo_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP47" populated="true" UUID="90137817-1a03-4c01-a946-c0e797ec5afe" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false" target-catalog="Biblioteca"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
